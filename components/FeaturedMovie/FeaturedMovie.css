@@ -1,0 +1,104 @@
+.featured {
+  height: 100vh;
+}
+
+.featured--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured--horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 10%, transparent 90%);
+}
+
+.featured--movie {
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-bottom: 170px;
+}
+
+.featured--name {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.featured--info {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.featured--info div {
+  margin-right: 30px;
+}
+.featured--info-score {
+  color: #46d369;
+} 
+
+.featured--description {
+  max-width: 50%;
+  color:#999;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.featured--buttons {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.featured--buttons a {
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.featured--buttons a:first-child {
+  background-color: rgba(255,255,255, 0.8);
+  color:#111;
+  margin-right: 10px;
+  transition: all .2s;
+}
+.featured--buttons a:first-child:hover {
+  background-color:#fff;
+}
+.featured--buttons a:last-child {
+  background-color: rgba(200,200,200, 0.4);
+  color:#fff;
+  transition: all .2s;
+}
+.featured--buttons a:last-child:hover {
+  background-color: rgb(200,200,200, 0.8);
+}
+
+@media(max-width:760px) {
+
+  .featured--name {
+    font-size: 30px;
+  }
+
+  .featured--description {
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 90%;
+  }
+
+  .featured--info {
+    font-size: 12px;
+  }
+
+  .featured--buttons {
+    font-size: 14px;
+    padding: 1;
+  }
+  .featured--buttons a {
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+}

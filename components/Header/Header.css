@@ -1,0 +1,36 @@
+header {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: transparent;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+  transition: all .5s ease-in;
+}
+header.black {
+  background-color: #141414;
+}
+
+header img {
+  height: 30px;
+}
+
+header img:last-child {
+  height: 40px;
+  border-radius: 5px;
+}
+
+@media(max-width:760px) {
+  header img {
+    height: 10px;
+  }
+
+  header img:last-child {
+    height: 20px;
+  }
+}
